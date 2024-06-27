@@ -3,9 +3,10 @@ import re
 import matplotlib.pyplot as plt
 
 # Path to your data file
-file_path = '/Users/sebastie.reynaud1/Documents/ALGO Assistant/challenge/pipeline/data/ehyd_messstellen_all_gw/Grundwasserstand-Monatsmittel/Grundwasserstand-Monatsmittel-300020.csv'
+file_path = '/Users/sebastie.reynaud1/Documents/ALGO Assistant/challenge/pipeline/data/ehyd_messstellen_all_nlv/NS-Tagessummen/NS-Tagessummen-100206.csv'
 # Define a regular expression pattern to extract date and value
-pattern = r'(\d{2}\.\d{2}\.\d{4} \d{2}:\d{2}:\d{2})\s*;\s*([\d,]+)\s*;\s*'
+pattern = r'(\d{2}\.\d{2}\.\d{4} \d{2}:\d{2}:\d{2})\s*;\s*([\d,]+)\s*(?:;\s*)?'
+
 
 # Initialize lists to store extracted data
 dates = []

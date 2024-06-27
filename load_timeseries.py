@@ -47,6 +47,6 @@ print(file_numbers)
 
 # Example usage: accessing the DataFrame of the first file
 if data:
-    print(data[0].head())
+    print(len(data),len(file_numbers))
 
 # Now 'data' contains all the DataFrames, and 'file_numbers' contains the extracted numbers
