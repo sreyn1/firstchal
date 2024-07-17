@@ -14,7 +14,6 @@ def get_closest_niederschalgs_df(gw_id : int, max_dist : float) :
     snow_df_list, snow_id = get_data_from_csv_list(path_snow)
     rain_df_list_filtered, snow_df_list_filtered  = [],[]
     rain_id_filtered, snow_id_filtered = [], []
-    print(rain_id, rain_df_list)
     for (ix, id) in enumerate(rain_id):
         if distance(gw_id, id) < max_dist:
             rain_df_list_filtered.append(rain_df_list[ix])
